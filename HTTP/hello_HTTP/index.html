@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>最近公共祖先三种类型汇总（漫画版）</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><p></p><div class="toc"><h3>文章目录</h3><ul><li><a href="#_3">最近公共祖先定义</a></li><li><a href="#_6">查找最近公共祖先</a></li><ul><li><a href="#_12">三叉链</a></li><li><a href="#_68">二叉搜索树</a></li><li><a href="#_96">普通二叉树</a></li></ul></ul></div><br>
+<img src="https://img-blog.csdnimg.cn/8a91f5ef953542eeba560c9cb0931a7c.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/13040b3685234461b03cc606b76ccc1c.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><p></p>
+<h1><a id="_3"></a>最近公共祖先定义</h1>
+<p><img src="https://img-blog.csdnimg.cn/0462bd78a4be42658a2c7bb7e1045aaa.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/5d5b4d7c99e74ce495adb6dfb615ca9f.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h1><a id="_6"></a>查找最近公共祖先</h1>
+<p><img src="https://img-blog.csdnimg.cn/6fc5f458ceea4b2badd1ba47d1c92437.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/010b37be13ba4bef9708e7d7946bb32c.gif#pic_center" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/bbf0a7c8c721477bb9e5797ca56102e7.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/77b88adef2de4c2089e7721cae94ed25.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/65bf58e125a64e22b718f331468874c9.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+<h2><a id="_12"></a>三叉链</h2>
+<p><img src="https://img-blog.csdnimg.cn/c9f70a57db0b46a483bc466eb832ef66.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/8f95f658b7c4488b99e65df246e575ad.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/52e4560c6fe4470f8eedefa2a854bbe1.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/d8fa56ca32464a9c8f19402bb7148af8.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+代码如下：</p>
+<pre><code class="prism language-cpp"><span class="token comment">//三叉链</span>
+<span class="token keyword">struct</span> <span class="token class-name">TreeNode</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> val<span class="token punctuation">;</span>
+    TreeNode <span class="token operator">*</span>left<span class="token punctuation">;</span>
+    TreeNode <span class="token operator">*</span>right<span class="token punctuation">;</span>
+	TreeNode <span class="token operator">*</span>parent<span class="token punctuation">;</span>
+    <span class="token function">TreeNode</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token function">val</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">left</span><span class="token punctuation">(</span><span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">right</span><span class="token punctuation">(</span><span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">parent</span><span class="token punctuation">(</span><span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+	TreeNode<span class="token operator">*</span> <span class="token function">lowestCommonAncestor</span><span class="token punctuation">(</span>TreeNode<span class="token operator">*</span> root<span class="token punctuation">,</span> TreeNode<span class="token operator">*</span> p<span class="token punctuation">,</span> TreeNode<span class="token operator">*</span> q<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		TreeNode<span class="token operator">*</span> curp <span class="token operator">=</span> p<span class="token punctuation">,</span> <span class="token operator">*</span>curq <span class="token operator">=</span> q<span class="token punctuation">;</span> <span class="token comment">//用于遍历p、q结点的祖先结点</span>
+		<span class="token keyword">int</span> lenp <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> lenq <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">//分别记录p、q结点各自的祖先结点个数</span>
+		<span class="token comment">//统计p结点的祖先结点个数</span>
+		<span class="token keyword">while</span> <span class="token punctuation">(</span>curp <span class="token operator">!=</span> root<span class="token punctuation">)</span>
+		<span class="token punctuation">{</span>
+			lenp<span class="token operator">++</span><span class="token punctuation">;</span>
+			curp <span class="token operator">=</span> curp<span class="token operator">-&gt;</span>parent<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token comment">//统计q结点的祖先结点个数</span>
+		<span class="token keyword">while</span> <span class="token punctuation">(</span>curq <span class="token operator">!=</span> root<span class="token punctuation">)</span>
+		<span class="token punctuation">{</span>
+			lenq<span class="token operator">++</span><span class="token punctuation">;</span>
+			curq <span class="token operator">=</span> curq<span class="token operator">-&gt;</span>parent<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token comment">//longpath和shortpath分别标记祖先路径较长和较短的结点</span>
+		TreeNode<span class="token operator">*</span> longpath <span class="token operator">=</span> p<span class="token punctuation">,</span> <span class="token operator">*</span>shortpath <span class="token operator">=</span> q<span class="token punctuation">;</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>lenp <span class="token operator">&lt;</span> lenq<span class="token punctuation">)</span>
+		<span class="token punctuation">{</span>
+			longpath <span class="token operator">=</span> q<span class="token punctuation">;</span>
+			shortpath <span class="token operator">=</span> p<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token comment">//p、q结点祖先结点个数的差值</span>
+		<span class="token keyword">int</span> count <span class="token operator">=</span> <span class="token function">abs</span><span class="token punctuation">(</span>lenp <span class="token operator">-</span> lenq<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token comment">//先让longpath往上走count个结点</span>
+		<span class="token keyword">while</span> <span class="token punctuation">(</span>count<span class="token operator">--</span><span class="token punctuation">)</span>
+		<span class="token punctuation">{</span>
+			longpath <span class="token operator">=</span> longpath<span class="token operator">-&gt;</span>parent<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token comment">//再让longpath和shortpath同时往上走，此时第一个相同的结点便是最近公共祖先结点</span>
+		<span class="token keyword">while</span> <span class="token punctuation">(</span>longpath <span class="token operator">!=</span> shortpath<span class="token punctuation">)</span>
+		<span class="token punctuation">{</span>
+			longpath <span class="token operator">=</span> longpath<span class="token operator">-&gt;</span>parent<span class="token punctuation">;</span>
+			shortpath <span class="token operator">=</span> shortpath<span class="token operator">-&gt;</span>parent<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token keyword">return</span> longpath<span class="token punctuation">;</span> <span class="token comment">//返回最近公共祖先结点</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<h2><a id="_68"></a>二叉搜索树</h2>
+<p><img src="https://img-blog.csdnimg.cn/26162433171f47d48887e47634826459.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/3efd5d122adf4f9bb3e78c808a2fc14b.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/fd8fea7ebda3472287147b1ae03395f5.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/89a234b29d514b45a4f24e5fc707195c.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+代码如下：</p>
+<pre><code class="prism language-cpp"><span class="token comment">//搜索二叉树</span>
+<span class="token keyword">struct</span> <span class="token class-name">TreeNode</span> <span class="token punctuation">{</span>
+	<span class="token keyword">int</span> val<span class="token punctuation">;</span>
+	TreeNode <span class="token operator">*</span>left<span class="token punctuation">;</span>
+	TreeNode <span class="token operator">*</span>right<span class="token punctuation">;</span>
+	<span class="token function">TreeNode</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token function">val</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">left</span><span class="token punctuation">(</span><span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">right</span><span class="token punctuation">(</span><span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+	TreeNode<span class="token operator">*</span> <span class="token function">lowestCommonAncestor</span><span class="token punctuation">(</span>TreeNode<span class="token operator">*</span> root<span class="token punctuation">,</span> TreeNode<span class="token operator">*</span> p<span class="token punctuation">,</span> TreeNode<span class="token operator">*</span> q<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>p<span class="token operator">-&gt;</span>val <span class="token operator">==</span> root<span class="token operator">-&gt;</span>val <span class="token operator">||</span> q<span class="token operator">-&gt;</span>val <span class="token operator">==</span> root<span class="token operator">-&gt;</span>val<span class="token punctuation">)</span> <span class="token comment">//p、q结点中某一个结点的值等于根结点的值，则根结点就是这两个结点的最近公共祖先</span>
+			<span class="token keyword">return</span> root<span class="token punctuation">;</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>p<span class="token operator">-&gt;</span>val <span class="token operator">&lt;</span> root<span class="token operator">-&gt;</span>val<span class="token operator">&amp;&amp;</span>q<span class="token operator">-&gt;</span>val <span class="token operator">&lt;</span> root<span class="token operator">-&gt;</span>val<span class="token punctuation">)</span> <span class="token comment">//p、q结点的值都小于根结点的值，说明这两个结点的最近公共祖先在该树的左子树当中</span>
+			<span class="token keyword">return</span> <span class="token function">lowestCommonAncestor</span><span class="token punctuation">(</span>root<span class="token operator">-&gt;</span>left<span class="token punctuation">,</span> p<span class="token punctuation">,</span> q<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>p<span class="token operator">-&gt;</span>val <span class="token operator">&gt;</span> root<span class="token operator">-&gt;</span>val<span class="token operator">&amp;&amp;</span>q<span class="token operator">-&gt;</span>val <span class="token operator">&gt;</span> root<span class="token operator">-&gt;</span>val<span class="token punctuation">)</span> <span class="token comment">//p、q结点的值都大于根结点的值，说明这两个结点的最近公共祖先在该树的右子树当中</span>
+			<span class="token keyword">return</span> <span class="token function">lowestCommonAncestor</span><span class="token punctuation">(</span>root<span class="token operator">-&gt;</span>right<span class="token punctuation">,</span> p<span class="token punctuation">,</span> q<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">else</span> <span class="token comment">//p、q结点的值一个比根小一个比根大，说明根就是这两个结点的最近公共祖先</span>
+			<span class="token keyword">return</span> root<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<h2><a id="_96"></a>普通二叉树</h2>
+<p><img src="https://img-blog.csdnimg.cn/7027ebf196774c9191f41203ca3eadb7.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/cc4532a4c46c418b80272f08ec962853.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/46f3608ed0ac4b68ae19b87ba5c72fdc.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+代码如下：</p>
+<pre><code class="prism language-cpp"><span class="token comment">//普通二叉树</span>
+<span class="token keyword">struct</span> <span class="token class-name">TreeNode</span> <span class="token punctuation">{</span>
+	<span class="token keyword">int</span> val<span class="token punctuation">;</span>
+	TreeNode <span class="token operator">*</span>left<span class="token punctuation">;</span>
+	TreeNode <span class="token operator">*</span>right<span class="token punctuation">;</span>
+	<span class="token function">TreeNode</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token function">val</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">left</span><span class="token punctuation">(</span><span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">right</span><span class="token punctuation">(</span><span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+	<span class="token keyword">bool</span> <span class="token function">Find</span><span class="token punctuation">(</span>TreeNode<span class="token operator">*</span> root<span class="token punctuation">,</span> TreeNode<span class="token operator">*</span> x<span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>root <span class="token operator">==</span> <span class="token keyword">nullptr</span><span class="token punctuation">)</span> <span class="token comment">//空树，查找失败</span>
+			<span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>root <span class="token operator">==</span> x<span class="token punctuation">)</span> <span class="token comment">//查找成功</span>
+			<span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+
+		<span class="token keyword">return</span> <span class="token function">Find</span><span class="token punctuation">(</span>root<span class="token operator">-&gt;</span>left<span class="token punctuation">,</span> x<span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token function">Find</span><span class="token punctuation">(</span>root<span class="token operator">-&gt;</span>right<span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//在左子树找到了或是右子树找到了，都说明该结点在该树当中</span>
+	<span class="token punctuation">}</span>
+	TreeNode<span class="token operator">*</span> <span class="token function">lowestCommonAncestor</span><span class="token punctuation">(</span>TreeNode<span class="token operator">*</span> root<span class="token punctuation">,</span> TreeNode<span class="token operator">*</span> p<span class="token punctuation">,</span> TreeNode<span class="token operator">*</span> q<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>p <span class="token operator">==</span> root <span class="token operator">||</span> q <span class="token operator">==</span> root<span class="token punctuation">)</span> <span class="token comment">//p、q结点中某一个结点为根结点，则根结点就是这两个结点的最近公共祖先</span>
+			<span class="token keyword">return</span> root<span class="token punctuation">;</span>
+		<span class="token comment">//判断p、q结点是否在左右子树</span>
+		<span class="token keyword">bool</span> IspInLeft<span class="token punctuation">,</span> IspInRight<span class="token punctuation">,</span> IsqInLeft<span class="token punctuation">,</span> IsqInRight<span class="token punctuation">;</span>
+		IspInLeft <span class="token operator">=</span> <span class="token function">Find</span><span class="token punctuation">(</span>root<span class="token operator">-&gt;</span>left<span class="token punctuation">,</span> p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		IspInRight <span class="token operator">=</span> <span class="token operator">!</span>IspInLeft<span class="token punctuation">;</span>
+		IsqInLeft <span class="token operator">=</span> <span class="token function">Find</span><span class="token punctuation">(</span>root<span class="token operator">-&gt;</span>left<span class="token punctuation">,</span> q<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		IsqInRight <span class="token operator">=</span> <span class="token operator">!</span>IsqInLeft<span class="token punctuation">;</span>
+
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>IspInLeft<span class="token operator">&amp;&amp;</span>IsqInLeft<span class="token punctuation">)</span> <span class="token comment">//p、q结点都在左子树，说明这两个结点的最近公共祖先也在左子树当中</span>
+			<span class="token keyword">return</span> <span class="token function">lowestCommonAncestor</span><span class="token punctuation">(</span>root<span class="token operator">-&gt;</span>left<span class="token punctuation">,</span> p<span class="token punctuation">,</span> q<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>IspInRight<span class="token operator">&amp;&amp;</span>IsqInRight<span class="token punctuation">)</span> <span class="token comment">//p、q结点都在右子树，说明这两个结点的最近公共祖先也在右子树当中</span>
+			<span class="token keyword">return</span> <span class="token function">lowestCommonAncestor</span><span class="token punctuation">(</span>root<span class="token operator">-&gt;</span>right<span class="token punctuation">,</span> p<span class="token punctuation">,</span> q<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">else</span> <span class="token comment">//p、q结点一个在左子树一个在右子树，说明根就是这两个结点的最近公共祖先</span>
+			<span class="token keyword">return</span> root<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p><img src="https://img-blog.csdnimg.cn/45fde7103db34fc7a3071f7f5a87317d.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/a3a800f1f4494d06b70efb3f6d57b217.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/78c2712ab72547ff9660fef6eaf4f6c6.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/f2ca2507c89e497f939ac0511b846d58.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/e58266ecaea8422a9d34f1626992f215.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/7ab7a211dba147bb9d76eae03785920f.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+<img src="https://img-blog.csdnimg.cn/113cd525b22448fe8e6aa5b3cb4f128c.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"><br>
+看着似乎不太好理解，来看看下面的动图演示：<br>
+<img src="https://img-blog.csdnimg.cn/b3dee1776e3e46d2974b9778ac385412.gif#pic_center" alt="在这里插入图片描述"><br>
+代码如下：</p>
+<pre><code class="prism language-cpp"><span class="token comment">//普通二叉树</span>
+<span class="token keyword">struct</span> <span class="token class-name">TreeNode</span> <span class="token punctuation">{</span>
+	<span class="token keyword">int</span> val<span class="token punctuation">;</span>
+	TreeNode <span class="token operator">*</span>left<span class="token punctuation">;</span>
+	TreeNode <span class="token operator">*</span>right<span class="token punctuation">;</span>
+	<span class="token function">TreeNode</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token function">val</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">left</span><span class="token punctuation">(</span><span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">right</span><span class="token punctuation">(</span><span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+	<span class="token keyword">bool</span> <span class="token function">FindPath</span><span class="token punctuation">(</span>TreeNode<span class="token operator">*</span> root<span class="token punctuation">,</span> TreeNode<span class="token operator">*</span> x<span class="token punctuation">,</span> stack<span class="token operator">&lt;</span>TreeNode<span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&amp;</span> path<span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>root <span class="token operator">==</span> <span class="token keyword">nullptr</span><span class="token punctuation">)</span>
+			<span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+		path<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>root<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//该结点可能是路径当中的结点，先入栈</span>
+
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>root <span class="token operator">==</span> x<span class="token punctuation">)</span> <span class="token comment">//该结点是最终结点，查找结束</span>
+			<span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+
+		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">FindPath</span><span class="token punctuation">(</span>root<span class="token operator">-&gt;</span>left<span class="token punctuation">,</span> x<span class="token punctuation">,</span> path<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">//在该结点的左子树找到了最终结点，查找结束</span>
+			<span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">FindPath</span><span class="token punctuation">(</span>root<span class="token operator">-&gt;</span>right<span class="token punctuation">,</span> x<span class="token punctuation">,</span> path<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">//在该结点的右子树找到了最终结点，查找结束</span>
+			<span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+
+		path<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//在该结点的左右子树均没有找到最终结点，该结点不可能是路径当中的结点，该结点出栈</span>
+		<span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span> <span class="token comment">//在该结点处查找失败</span>
+	<span class="token punctuation">}</span>
+	TreeNode<span class="token operator">*</span> <span class="token function">lowestCommonAncestor</span><span class="token punctuation">(</span>TreeNode<span class="token operator">*</span> root<span class="token punctuation">,</span> TreeNode<span class="token operator">*</span> p<span class="token punctuation">,</span> TreeNode<span class="token operator">*</span> q<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		stack<span class="token operator">&lt;</span>TreeNode<span class="token operator">*</span><span class="token operator">&gt;</span> pPath<span class="token punctuation">,</span> qPath<span class="token punctuation">;</span>
+		<span class="token function">FindPath</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> p<span class="token punctuation">,</span> pPath<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//将从根到p结点的路径存放到pPath当中</span>
+		<span class="token function">FindPath</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> q<span class="token punctuation">,</span> qPath<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//将从根到q结点的路径存放到qPath当中</span>
+		<span class="token comment">//longpath和shortpath分别标记长路径和短路径</span>
+		stack<span class="token operator">&lt;</span>TreeNode<span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">*</span> longPath <span class="token operator">=</span> <span class="token operator">&amp;</span>pPath<span class="token punctuation">,</span> <span class="token operator">*</span>shortPath <span class="token operator">=</span> <span class="token operator">&amp;</span>qPath<span class="token punctuation">;</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>pPath<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> qPath<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+		<span class="token punctuation">{</span>
+			longPath <span class="token operator">=</span> <span class="token operator">&amp;</span>qPath<span class="token punctuation">;</span>
+			shortPath <span class="token operator">=</span> <span class="token operator">&amp;</span>pPath<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token comment">//让longPath先弹出差值个数据</span>
+		<span class="token keyword">int</span> count <span class="token operator">=</span> longPath<span class="token operator">-&gt;</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> shortPath<span class="token operator">-&gt;</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">while</span> <span class="token punctuation">(</span>count<span class="token operator">--</span><span class="token punctuation">)</span>
+		<span class="token punctuation">{</span>
+			longPath<span class="token operator">-&gt;</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token comment">//longPath和shortPath一起弹数据，直到两个栈顶的结点相同</span>
+		<span class="token keyword">while</span> <span class="token punctuation">(</span>longPath<span class="token operator">-&gt;</span><span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">!=</span> shortPath<span class="token operator">-&gt;</span><span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+		<span class="token punctuation">{</span>
+			longPath<span class="token operator">-&gt;</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			shortPath<span class="token operator">-&gt;</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token keyword">return</span> longPath<span class="token operator">-&gt;</span><span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//返回这个相同的结点，即最近公共祖先</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p><img src="https://img-blog.csdnimg.cn/b860b6bc1a80420aaa09b0e8cca5bf4b.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAMjAyMWRyYWdvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p>
+</div>
+</body>
+
+</html>
